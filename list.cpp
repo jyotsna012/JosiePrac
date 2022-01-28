@@ -30,11 +30,11 @@ void printVal(node * head){
     count = count + 1;
     head = head -> next;
   }
+  cout << count << endl;
+
   for(int i = 1; i <= count; i++){
     if(i == count - 1){
       cout << head -> data << endl;
     }
-  }
-  
- cout << count << endl;
+  }  
 }
