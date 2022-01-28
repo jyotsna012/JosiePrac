@@ -15,6 +15,7 @@ struct node
 
 
 /* These functions are already written and can be called to test out your code */
+void printVal(node * head);
 void build(node * & head);      //supplied
 void display_all(node * head);  //supplied
 
