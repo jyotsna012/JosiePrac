@@ -25,23 +25,15 @@ void display_all(node * head) {
 }
 
 void printVal(node * head){
-
   int count = 0;
-  
   while(head != NULL){
     count = count + 1;
     head = head -> next;
   }
-   
   for(int i = 1; i <= count; i++){
-  
     if(i == count - 1){
-    
       cout << head -> data << endl;
-    
     }
-    
-  
   }
   
  cout << count << endl;
