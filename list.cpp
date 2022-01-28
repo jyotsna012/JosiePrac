@@ -82,8 +82,8 @@ void swap(node * head){
   temp = head -> next;
   
   head -> next = second;
-  start -> next = temp;
   follow -> next = start;
+  start -> next = temp;
   
 }
 
