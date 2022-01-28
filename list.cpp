@@ -23,3 +23,11 @@ void display_all(node * head) {
   }
   cout << endl;
 }
+
+void printVal(node * head){
+
+  while(head -> next != NULL){
+    cout << "hi" << endl;
+    head = head -> next;
+  }
+}
