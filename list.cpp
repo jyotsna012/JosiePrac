@@ -60,30 +60,33 @@ while(head -> next -> next != NULL){
 
 void swap(node * head){
   
-    
+  node * p = new node();
+  p = head;
+  
   node * follow = new node();
-  follow -> next = head;
+  follow -> next = p;
     
   node * start = new node();
-  start -> next = head;
+  start -> next = p;
   
   node * second = new node();
-  second -> next = head -> next;
+  second -> next = p -> next;
   
   node * temp = new node();
 
-  while(head -> next -> next != NULL){
-   follow = head;
-   head = head -> next;
+  while(p -> next -> next != NULL){
+   follow = p;
+   p = p -> next;
   }
   
   start = start -> next;
   second = second -> next;;
-  temp = head -> next;
+  temp = p -> next;
   
-  head -> next = second;
-  follow -> next = start;
+  p -> next = second;
   start -> next = temp;
+  p = head;
+  follow -> next = start;
   
 }
 
