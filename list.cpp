@@ -32,10 +32,10 @@ void printVal(node * head){
   }
   cout << count << endl;
 
-  for(int i = 1; i <= count; i++){
+  for(int i = 1; i <= count-1; i++){
     head = head -> next;
-    if(i == count - 1){
-      cout << head->data << endl;
-    }
   }  
+  
+  cout << head->data << endl;
+
 }
