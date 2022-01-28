@@ -78,6 +78,9 @@ void swap(node * head){
    follow = head;
    head = head -> next;
   }
+  
+  start = start -> next;
+  second = second -> next ->next;
 
   start -> next = head -> next;
   follow -> next = start;
