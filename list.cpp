@@ -33,5 +33,16 @@ void printVal(node * head){
     head = head -> next;
   }
    
+  for(int i = 1; i <= count; i++){
+  
+    if(i = count - 1){
+    
+      cout << head -> data << endl;
+    
+    }
+    
+  
+  }
+  
  cout << count << endl;
 }
