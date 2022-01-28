@@ -30,7 +30,8 @@ void printVal(node * head){
   
   while(head != NULL){
     count = count + 1;
-    cout << "hi" << endl;
     head = head -> next;
   }
+   
+ cout << count << endl;
 }
