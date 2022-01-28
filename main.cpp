@@ -6,7 +6,7 @@ int main()
     node * head = NULL;
     build(head);
     display_all(head);
-    add(head,333);
+    swap(head);
     //SecondToLast(head);
     //addFirstAndLast(head);
 
