@@ -92,26 +92,40 @@ void swap(node * head){
   cout << endl;
 }
 
-void add(node * head, int val){
+void add(node ** head, int val){
 
-node * newNode = new node();
-node *last = head;
-newNode -> data = val;
-newNode -> next = NULL;
-
-  
-while(last != NULL){
-
-  last = last -> next;
-}
-  
-last -> next = newNode;  
+ // 1. allocate node
+    Node* new_node = new Node();
    
-  while (head != NULL) {
-    cout << head->data << " ";
-    head = head->next;
-  }
-  cout << endl;
+    // Used in step 5
+    Node *last = *head;
+   
+    // 2. Put in the data
+    new_node->data = val; 
+   
+    // 3. This new node is going to be 
+    // the last node, so make next of 
+    // it as NULL
+    new_node->next = NULL; 
+   
+    // 4. If the Linked List is empty,
+    // then make the new node as head
+    if (*head == NULL) 
+    { 
+        *head = new_node; 
+        return; 
+    } 
+   
+    // 5. Else traverse till the last node
+    while (last->next != NULL)
+    {
+        last = last->next; 
+    }
+   
+    // 6. Change the next of last node
+    last->next = new_node; 
+    return;
+ 
 }
 
 
