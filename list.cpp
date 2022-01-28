@@ -83,8 +83,7 @@ void swap(node * head){
   second = second -> next;
 
   start -> next = head -> next;
-  follow -> next = start;
-  head -> next = second;
+  head -> next = start;
   
   cout << "h2: " << head -> data << endl;
   cout << "s2: " << start -> data << endl;
