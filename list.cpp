@@ -26,7 +26,10 @@ void display_all(node * head) {
 
 void printVal(node * head){
 
+  int count = 0;
+  
   while(head != NULL){
+    count = count + 1;
     cout << "hi" << endl;
     head = head -> next;
   }
