@@ -16,7 +16,7 @@ struct node
 
 /* These functions are already written and can be called to test out your code */
 void add(node * head, int val);
-void swap(node * head);
+void swap(node * & head);
 void SecondToLast(node * head);
 void addFirstAndLast(node * head);
 void build(node * & head);      //supplied
