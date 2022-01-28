@@ -95,10 +95,10 @@ void swap(node * head){
 void add(node ** head, int val){
 
  // 1. allocate node
-    Node* new_node = new Node();
+    node* new_node = new node();
    
     // Used in step 5
-    Node *last = *head;
+    node *last = *head;
    
     // 2. Put in the data
     new_node->data = val; 
