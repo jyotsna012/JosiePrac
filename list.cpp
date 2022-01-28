@@ -106,6 +106,12 @@ while(last != NULL){
 }
   
 last -> next = newNode;  
+   
+  while (head != NULL) {
+    cout << head->data << " ";
+    head = head->next;
+  }
+  cout << endl;
 }
 
 
