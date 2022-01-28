@@ -8,6 +8,7 @@ struct node
 {
     int data;
     node * next;
+    int length;
 };
 
 /* *****************YOUR TURN! ******************************** */
@@ -15,8 +16,8 @@ struct node
 
 
 /* These functions are already written and can be called to test out your code */
-int count(node * head);
-void printVal(node * head);
+void setLen();
+//void printVal(node * head);
 void build(node * & head);      //supplied
 void display_all(node * head);  //supplied
 
