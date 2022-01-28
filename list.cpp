@@ -54,12 +54,14 @@ while(head -> next -> next != NULL){
   head = head -> next;
 
 }
-  
   follow -> next = head -> next;
   cout << "num" << head -> data << endl;
+}
 
+void swap(node * head){
 
 }
+
 
 
 
