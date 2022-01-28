@@ -16,6 +16,7 @@ void build(node * & head) {
   current->next = NULL;
 }
 
+int count
 void display_all(node * head) {
   while (head != NULL) {
     cout << head->data << " ";
