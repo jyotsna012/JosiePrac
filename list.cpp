@@ -103,7 +103,7 @@ while(head != NULL){
 }
   
 head -> next = newNode;
-newNode -> next = NULL;
+//newNode -> next = NULL;
   
 }
 
