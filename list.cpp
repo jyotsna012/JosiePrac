@@ -26,7 +26,7 @@ void display_all(node * head) {
 
 void addFirstAndLast(node * head){
   
-  node * follow = new node():
+  node * follow = new node();
   follow -> next = head;
   int first = head -> data;
   int last;
