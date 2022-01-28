@@ -88,6 +88,7 @@ void swap(node * head){
   
   cout << "h2: " << head -> data << endl;
   cout << "s2: " << start -> data << endl;
+  cout << "sec2: " << second -> data << endl;
   cout << "f2: " << follow -> data << endl;
   
 }
