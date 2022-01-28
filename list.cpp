@@ -26,8 +26,19 @@ void display_all(node * head) {
 
 void addFirstAndLast(node * head){
   
-  cout << head -> data << endl;
+  node * follow = new Node:
+  follow -> next = head;
+  int first = head -> data;
+  int last;
+  
+  while(head != NULL){
+    head = head -> next;
+  }
 
+  last = head -> data;
+  int sum = first + last;
+  cout << "sum " << sum << endl;
+  
 }
 
 
