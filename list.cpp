@@ -45,13 +45,13 @@ void addFirstAndLast(node * head){
 
 void SecondToLast(node * head){
   
-  cout << "1: " << head -> next -> data << endl;
+  cout << "1: " << head -> data << endl;
   head = head -> next;
-  cout << "2: " << head -> next -> data << endl;
+  cout << "2: " << head -> data << endl;
   head = head -> next;
-  cout << "3: " << head -> next -> data << endl;
+  cout << "3: " << head -> data << endl;
   head = head -> next;
-  cout << "4: " << head -> next -> data << endl;
+  cout << "4: " << head -> data << endl;
 
 
 
