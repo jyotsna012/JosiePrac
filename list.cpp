@@ -16,7 +16,6 @@ void build(node * & head) {
   current->next = NULL;
 }
 
-int count
 void display_all(node * head) {
   while (head != NULL) {
     cout << head->data << " ";
@@ -25,15 +24,22 @@ void display_all(node * head) {
   cout << endl;
 }
 
-void printVal(node * head){
-  int count = 0;
-  while(head != NULL){
+int count(node * head){
+    int count = 0;
+    while(head != NULL){
     count = count + 1;
     head = head -> next;
   }
-  cout << count << endl;
+  return count;
+}
 
-  for(int i = 1; i <= count-1; i++){
+int length = count(head);
+
+void printVal(node * head, length){
+
+  cout << length << endl;
+
+  for(int i = 1; i <= length-1; i++){
     head = head -> next;
   }  
   
