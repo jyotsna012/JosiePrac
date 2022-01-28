@@ -6,7 +6,7 @@ int main()
     node * head = NULL;
     build(head);
     display_all(head);
-    void deleteSecondToLast(node * head)
+    void deleteSecondToLast(head);
     //addFirstAndLast(head);
 
 
