@@ -92,6 +92,21 @@ void swap(node * head){
   cout << endl;
 }
 
+void add(node * head, int val){
+
+node * newNode = new node();
+newNode -> data = val;
+  
+while(head != NULL){
+
+  head = head -> next;
+}
+  
+head -> next = newNode;
+newNode -> next = NULL;
+  
+}
+
 
 
 
