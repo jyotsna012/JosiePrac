@@ -71,9 +71,18 @@ void swap(node * head){
    follow = head;
    head = head -> next;
   }
+  
+  cout << "h1" << head -> data << endl;
+  cout << "s1" << start -> data << endl;
+  cout << "f1" << follow -> data << endl;
+
   start -> next = head -> next;
   head -> next = follow;
   follow -> next = start;
+  
+  cout << "h2" << head -> data << endl;
+  cout << "s2" << start -> data << endl;
+  cout << "f2" << follow -> data << endl;
   
 }
 
