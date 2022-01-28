@@ -92,7 +92,7 @@ void swap(node * head){
   cout << endl;
 }
 
-void add(node ** head, int val){
+void add(node * head, int val){
 
  
     //1. allocate node
@@ -106,12 +106,13 @@ void add(node ** head, int val){
     
     //5. Else, traverse to the last node
     node* temp = head;
-    while(temp->next != NULL)
+    while(temp->next != NULL){
       temp = temp->next;
+    }
     
     //6. Change the next of last node to new node
     temp->next = newNode;
-  }    
+    
   
 }
 
