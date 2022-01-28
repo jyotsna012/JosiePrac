@@ -44,6 +44,14 @@ void addFirstAndLast(node * head){
 }
 
 void deleteSecondToLast(node * head){
+  
+  cout << "1: " << head -> next -> data << endl;
+  head = head -> next;
+  cout << "2: " << head -> next -> data << endl;
+  head = head -> next;
+  cout << "3: " << head -> next -> data << endl;
+  head = head -> next;
+  cout << "4: " << head -> next -> data << endl;
 
 
 
