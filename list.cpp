@@ -34,7 +34,7 @@ void printVal(node * head){
 
   for(int i = 1; i <= count; i++){
     if(i == count - 1){
-      cout << head -> data << endl;
+      cout << "hi" << endl;
     }
   }  
 }
