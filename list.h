@@ -1,8 +1,21 @@
+//list.h
 #include <iostream>
-struct Node{
+#include <cctype>
+#include <cstdlib>
+using namespace std;
 
-int data;
-Node *link;
+struct node
+{
+    int data;
+    node * next;
+};
+
+/* *****************YOUR TURN! ******************************** */
+/* PLACE YOUR PROTOTYPE HERE */
 
 
-}
+/* These functions are already written and can be called to test out your code */
+void build(node * & head);      //supplied
+void display_all(node * head);  //supplied
+
+
