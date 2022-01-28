@@ -95,6 +95,24 @@ void swap(node * head){
 void add(node ** head, int val){
 
  
+    //1. allocate node
+  node* newNode = new node();
+  
+  //2. assign data element
+  newNode->data = val;
+  
+  //3. assign null to the next of new node
+  newNode->next = NULL; 
+    
+    //5. Else, traverse to the last node
+    node* temp = head;
+    while(temp->next != NULL)
+      temp = temp->next;
+    
+    //6. Change the next of last node to new node
+    temp->next = newNode;
+  }    
+  
 }
 
 
