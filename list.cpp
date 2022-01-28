@@ -43,6 +43,11 @@ void addFirstAndLast(node * head){
   
 }
 
+void deleteSecondToLast(node * head){
+
+
+
+}
 
 
 
