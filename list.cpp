@@ -55,6 +55,7 @@ while(head -> next -> next != NULL){
 
 }
   
+  follow -> next = head -> next;
   cout << "num" << head -> data << endl;
 
 
