@@ -95,16 +95,17 @@ void swap(node * head){
 void add(node * head, int val){
 
 node * newNode = new node();
+node *last = *head;
 newNode -> data = val;
-  
-while(head != NULL){
+newNode -> next = NULL;
 
-  head = head -> next;
+  
+while(last != NULL){
+
+  last = last -> next;
 }
   
-head -> next = newNode;
-//newNode -> next = NULL;
-  
+last -> next = newNode;  
 }
 
 
