@@ -58,7 +58,7 @@ while(head -> next -> next != NULL){
   cout << "num" << head -> data << endl;
 }
 
-void swap(node * head){
+void swap(node * & head){
  
   
   node * follow = new node();
