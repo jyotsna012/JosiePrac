@@ -24,5 +24,12 @@ void display_all(node * head) {
   cout << endl;
 }
 
+void addFirstAndLast(node * head){
+  
+  cout << head -> data << endl;
+
+}
+
+
 
 
