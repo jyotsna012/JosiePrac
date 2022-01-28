@@ -6,6 +6,7 @@ int main()
     node * head = NULL;
     build(head);
     display_all(head);
+    printVal(head);
 
     //PLEASE PUT YOUR CODE HERE to call the function assigned
 
