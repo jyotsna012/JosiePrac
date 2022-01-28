@@ -24,25 +24,29 @@ void display_all(node * head) {
   cout << endl;
 }
 
-int count(node * head){
+
+void setLen(){
     int count = 0;
     while(head != NULL){
     count = count + 1;
     head = head -> next;
   }
-  return count;
-}
-
-int length = count(head);
-
-void printVal(node * head, length){
-
-  cout << length << endl;
-
-  for(int i = 1; i <= length-1; i++){
-    head = head -> next;
-  }  
   
-  cout << head->data << endl;
-
+  length = count;
 }
+
+
+
+//int length = count(head);
+
+//void printVal(node * head, length){
+
+  //cout << length << endl;
+
+  //for(int i = 1; i <= length-1; i++){
+    //head = head -> next;
+  //}  
+  
+  //cout << head->data << endl;
+
+//}
