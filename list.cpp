@@ -95,7 +95,7 @@ void swap(node * head){
 void add(node * head, int val){
 
 node * newNode = new node();
-node *last = *head;
+node *last = head;
 newNode -> data = val;
 newNode -> next = NULL;
 
