@@ -29,13 +29,15 @@ void addFirstAndLast(node * head){
   node * follow = new node();
   follow -> next = head;
   int first = head -> data;
+  cout << "first: " << first << endl;
   int last;
   
   while(head != NULL){
+    follow = head;
     head = head -> next;
   }
 
-  last = head -> data;
+  last = follow -> data;
   int sum = first + last;
   cout << "sum " << sum << endl;
   
